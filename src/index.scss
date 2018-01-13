@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 20px;
+
+  .spotim-header {
+    background-color: #0082DD;
+    height: 150px;
+    color: white;
+    .spotim-title {
+      font-size: 1.5em;
+    }
+  }
+  .userNameArea {
+    position: fixed;
+    bottom: 70px;
+    right: 13%;
+
+  }
+  .messageArea {
+    right: 13%;
+    position: fixed;
+    bottom: 20px;
+  }
+  .chatMessage {
+    padding: 5px;
+    border-radius:5px;
+    background-color: rgba(120, 145, 157, 0.31);
+    margin:7px;
+  }
+  .ownerMessage {
+    background-color: rgba(3, 169, 244, 0.31);
+    padding: 5px;
+    border-radius:5px;
+    margin:7px;
+  }
+  .userName{
+    color:Red;
+  }
+  .chatWindow{
+    background: azure;
+    height: 480px;
+    overflow: auto;
+    margin-top: 6px;
+    border: solid #2196F3;
+    border-radius: 5px;
+  }
+  .chatMessageList {
+    height: 100%;
+    display: inline;
+    text-align: left;
+    list-style-type: none;
+
+    ul {
+      padding: 0;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+  }
+}
+
+
+
+
+
