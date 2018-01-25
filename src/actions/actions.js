@@ -1,6 +1,7 @@
-import {MESSAGE_RECEIVED, CHANGE_NAME} from '../constants/Constants';
-import {getItem} from "../utils/storage";
+import {MESSAGE_RECEIVED, CHANGE_NAME,userNameKey} from '../constants/Constants';
+import {getItem, setItem} from "../utils/storage";
 import {avatarKey,userNameKey} from "../constants/Constants";
+import {setItem} from '../utils/storage';
 
 export const setNewMessage = (message, isOwner = false) => {
     return {
@@ -10,6 +11,7 @@ export const setNewMessage = (message, isOwner = false) => {
 };
 
 export const setUserName = name => {
+    setItem(userNameKey,name);
     return {type: CHANGE_NAME, payload: name}
 };
 

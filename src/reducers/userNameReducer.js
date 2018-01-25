@@ -1,10 +1,8 @@
-import {CHANGE_NAME,userNameKey} from '../constants/Constants';
-import {setItem} from '../utils/storage';
+import {CHANGE_NAME} from '../constants/Constants';
 
 const userNameReducer = (state={}, action) => {
     switch (action.type) {
         case CHANGE_NAME: {
-            setItem(userNameKey,action.payload);
             return action.payload;
         }
         default:
